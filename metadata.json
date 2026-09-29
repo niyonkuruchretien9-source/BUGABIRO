@@ -1,0 +1,6 @@
+{
+  "name": "Abakozi & Labor Payment Manager",
+  "description": "AbakoziPay: Real-time labor wage tracking and mobile money disbursement for Rwandan construction sites and businesses via MTN MoMo and Airtel Money E-Kash.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

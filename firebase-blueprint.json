@@ -1,0 +1,82 @@
+{
+  "entities": {
+    "Project": {
+      "title": "Project",
+      "description": "Construction site project containing workers and payroll",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the construction project"
+        },
+        "location": {
+          "type": "string",
+          "description": "Physical site location"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of last modification"
+        }
+      },
+      "required": ["name"]
+    },
+    "Employee": {
+      "title": "Employee",
+      "description": "Worker on the construction site",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Full name of the worker"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Mobile phone number for MoMo / Airtel"
+        },
+        "trade": {
+          "type": "string",
+          "description": "Specialty or duty"
+        },
+        "amount": {
+          "type": "number",
+          "description": "Wages payable in Rwandan Francs (Frw)"
+        },
+        "paymentMethod": {
+          "type": "string",
+          "description": "Preferred payment option (momo, airtel, cash, bank)"
+        },
+        "paymentStatus": {
+          "type": "string",
+          "description": "Payment status (pending, paid)"
+        },
+        "paidAt": {
+          "type": "string",
+          "description": "Date when wages were paid"
+        },
+        "paymentRef": {
+          "type": "string",
+          "description": "Transaction reference code"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of last update"
+        }
+      },
+      "required": ["name", "phone", "amount"]
+    }
+  },
+  "firestore": {
+    "/projects/{projectId}": {
+      "schema": {
+        "$ref": "#/entities/Project"
+      },
+      "description": "Construction site projects"
+    },
+    "/projects/{projectId}/employees/{employeeId}": {
+      "schema": {
+        "$ref": "#/entities/Employee"
+      },
+      "description": "Workers registered under a specific site project"
+    }
+  }
+}

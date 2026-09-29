@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <path d="M160 210c0-44.18 35.82-80 80-80s80 35.82 80 80-35.82 80-80 80-80-35.82-80-80zm160 120h-16.7c-19.5 9-41.2 14-63.3 14s-43.8-5-63.3-14H160c-44.2 0-80 35.8-80 80v26c0 13.3 10.7 24 24 24h296c13.3 0 24-10.7 24-24v-26c0-44.2-35.8-80-80-80z" fill="#ffffff" opacity="0.95"/>
+  <circle cx="360" cy="180" r="45" fill="#f59e0b"/>
+  <path d="M352 165h16v30h-16z M360 155c-2 0-4 1-5 2v26h10v-26c-1-1-3-2-5-2z" fill="#1e293b"/>
+  <text x="360" y="195" font-family="Arial, sans-serif" font-size="34" font-weight="bold" fill="#0f172a" text-anchor="middle">F</text>
+</svg>
